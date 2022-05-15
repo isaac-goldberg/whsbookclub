@@ -4,7 +4,8 @@ const mustacheExpress = require("mustache-express");
 
 const app = express();
 
-const rootRoutes = require("./routes/root-routes");
+// app routers
+const rootRoutes = require("./src/routes/root-routes");
 
 // app settings
 app.engine("html", mustacheExpress());
@@ -15,11 +16,7 @@ app.set("view engine", "html")
 app.use(express.static(`${__dirname}/assets`));
 app.locals.basedir = `${__dirname}/assets`;
 
-app.get("/", (req, res) => {
-    res.render("pages/home", {
-        title: "Home",
-    })
-});
+// use routers
 app.use("/", rootRoutes);
 
 const PORT = process.env.PORT || 2117;
