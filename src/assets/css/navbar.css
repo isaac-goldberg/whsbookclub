@@ -1,0 +1,90 @@
+.navbar-container {
+    text-align: left;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.navbar {
+    flex-grow: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+.navbar li {
+    display: inline;
+}
+.navbar li:not(:last-of-type) {
+    margin-right: 15px;
+}
+.navbar li a {
+    text-decoration: none;
+    color: var(--theme-text-primary);
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: var(--theme-transition-md);
+}
+.navbar li a:hover {
+    background-color: var(--theme-background-secondary);
+}
+.navbar li a:active {
+    background-color: var(--theme-background-primary-active);
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+}
+.dropdown-trigger-container {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    transition: var(--theme-transition-md);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.dropdown-trigger-container:hover, .dropdown-trigger-container.open {
+    background-color: var(--theme-background-secondary);
+}
+.dropdown-trigger {
+    height: fit-content;
+    color: var(--theme-text-primary);
+    transition: var(--theme-transition-md);
+}
+.dropdown-trigger-container:hover .dropdown-trigger {
+    color: var(--theme-text-secondary);
+}
+.dropdown-trigger-container.open .dropdown-trigger,
+.dropdown-trigger-container:active .dropdown-trigger {
+    color: var(--theme-text-primary-active);
+}
+.dropdown-trigger {
+    font-size: 24px;
+}
+
+.dropdown-content {
+    position: absolute;
+    float: left;
+    right: 0;
+    width: 150px;
+    background-color: var(--theme-background-secondary);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 2px;
+    transition: var(--theme-transition-imd);
+}
+.dropdown-content.hide {
+    pointer-events: none;
+    opacity: 0;
+}
+.dropdown-content:not(.hide) {
+    display: block;
+    opacity: 1;
+}
+.dropdown-content .dropdown-item {
+    display: block;
+    user-select: none;
+}

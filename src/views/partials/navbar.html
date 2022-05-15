@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/navbar.css">
+
+<div class="navbar-container">
+    <ul class="navbar">
+        <li class="navbar-brand"><a href="/">Home</a></li>
+        <li class="navbar-item"><a href="/board">Board Members</a></li>
+    </ul>
+
+    <div class="dropdown-container">
+        <div id="navbar-dropdown-trigger-container" class="dropdown-trigger-container">
+            <i id="navbar-dropdown-trigger" class="dropdown-trigger fas fa-gear"></i>
+        </div>
+        
+        <div id="navbar-dropdown-content" class="dropdown-content hide">
+            <div class="dropdown-item" id="darkmode-switch-container">Dark mode
+                {{> ./partials/switch}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/dropdown.js"></script>

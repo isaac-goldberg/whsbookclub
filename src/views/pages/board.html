@@ -1,0 +1,16 @@
+{{> ./partials/header}}
+
+{{> ./partials/navbar}}
+<link rel="stylesheet" href="/css/board.css">
+
+<h1>WHS Book Club Board Members</h1>
+<p class="subheading">2022 - 2023 School Year</p>
+
+<div class="board-cards">
+    {{#boardMembers}}
+        <div class="card">
+            <p class="card-role">{{role}}</p>
+            <p class="card-name">{{fullName}}</p>
+        </div>
+    {{/boardMembers}}
+</div>
