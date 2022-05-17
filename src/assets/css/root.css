@@ -26,6 +26,7 @@
 }
 
 body.lightmode {
+    /* 
     --theme-text-primary: #171717;
     --theme-text-primary-active: #000;
     --theme-text-secondary: #474747;
@@ -39,6 +40,20 @@ body.lightmode {
     --theme-background-tertiary: #AC9D8E;
     --theme-background-quaternary: #938475;
     --theme-background-quinary: #796A5B;
+    */
+    --theme-text-primary: #fbff00;
+    --theme-text-primary-active: rgb(223, 119, 119);
+    --theme-text-secondary: #ff0000;
+    --theme-text-link: #66ff00;
+
+    --theme-background-footer: #fffb00;
+    --theme-background-primary: #00ffff;
+    --theme-background-primary-active: #ff00aa;
+
+    --theme-background-secondary: #00ff37;
+    --theme-background-tertiary: #ff8000;
+    --theme-background-quaternary: #00ff55;
+    --theme-background-quinary: #ff00bf;
 }
 
 body.darkmode, body:not(.darkmode):not(.lightmode) {
