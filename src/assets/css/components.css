@@ -1,3 +1,5 @@
+/* sliding switch checkboxes */
+
 .switch-container {
     display: inline;
     width: 30px !important;
@@ -47,4 +49,27 @@
 .switch-container input:checked + .switch-slider-flexbox .switch-slider:before {
     transform: translateX(13px);
     background-color: var(--theme-success) !important;
+}
+
+/* flex tables */
+.flex-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 999px;
+    margin: auto;
+    margin-top: 50px;
+    row-gap: 20px;
+}
+
+.flex-table .card {
+    border: 1px solid #111;
+    border-radius: 10px;
+    padding: 5px 20px;
+    width: 33%;
+}
+
+.flex-table .card .card-title {
+    font-size: 24px;
 }
