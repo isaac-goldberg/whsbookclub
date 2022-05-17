@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter");
 
+/* root variables, never change across themes */
 :root {
     --theme-success-h: 139;
     --theme-success-s: 47%;
@@ -25,39 +26,75 @@
     --theme-transition-xfast: 0.075s ease;
 }
 
+/* body variables when theme is light mode */
 body.lightmode {
-    /* 
-    --theme-text-primary: #171717;
-    --theme-text-primary-active: #000;
-    --theme-text-secondary: #474747;
-    --theme-text-link: #0099ff;
+    /* [actually good looking light mode variables] */
+        /* 
+        --theme-text-primary: #171717;
+        --theme-text-primary-active: #000;
+        --theme-text-secondary: #474747;
+        --theme-text-link: #0099ff;
 
-    --theme-background-footer: #C6B7A8;
-    --theme-background-primary: #DFD0C1;
-    --theme-background-primary-active: #BCAEA1;
+        --theme-background-footer: #C6B7A8;
+        --theme-background-primary: #DFD0C1;
+        --theme-background-primary-active: #BCAEA1;
 
-    --theme-background-secondary: #c9bbae;
-    --theme-background-tertiary: #AC9D8E;
-    --theme-background-quaternary: #938475;
-    --theme-background-quinary: #796A5B;
-    */
+        --theme-background-secondary: #c9bbae;
+        --theme-background-tertiary: #AC9D8E;
+        --theme-background-quaternary: #938475;
+        --theme-background-quinary: #796A5B;
+        */
+    /* [end actually good looking light mode variables] */
+
+    animation: blinking linear 4s infinite;
+}
 @keyframes blinking {
     0% {
-    --theme-text-primary: #ff0000;
-    --theme-text-primary-active: rgb(223, 119, 119);
-    --theme-text-secondary: #ff0000;
-    --theme-text-link: #66ff00;
+        --theme-text-primary: #ff0000;
+        --theme-text-primary-active: rgb(223, 119, 119);
+        --theme-text-secondary: #ff0000;
+        --theme-text-link: #66ff00;
 
-    --theme-background-footer: #fffb00;
-    --theme-background-primary: #ffffff;
-    --theme-background-primary-active: #ff00aa;
+        --theme-background-footer: #fffb00;
+        --theme-background-primary: #ffffff;
+        --theme-background-primary-active: #ff00aa;
 
-    --theme-background-secondary: #00ff37;
-    --theme-background-tertiary: #ff8000;
-    --theme-background-quaternary: #00ff55;
-    --theme-background-quinary: #ff00bf;
+        --theme-background-secondary: #00ff37;
+        --theme-background-tertiary: #ff8000;
+        --theme-background-quaternary: #00ff55;
+        --theme-background-quinary: #ff00bf;
     }
-    100% {
+    25% {
+        --theme-text-primary: pink;
+        --theme-text-primary-active: blue;
+        --theme-text-secondary: purple;
+        --theme-text-link: orange;
+
+        --theme-background-footer: lime;
+        --theme-background-primary: #00eeff;
+        --theme-background-primary-active: blue;
+
+        --theme-background-secondary: red;
+        --theme-background-tertiary: yellow;
+        --theme-background-quaternary: lime;
+        --theme-background-quinary: orange;
+    }
+    50% {
+        --theme-text-primary: blue;
+        --theme-text-primary-active: purple;
+        --theme-text-secondary: #00eeff;
+        --theme-text-link: #00eeff;
+
+        --theme-background-footer: pink;
+        --theme-background-primary: lime;
+        --theme-background-primary-active: #ff00aa;
+
+        --theme-background-secondary: orange;
+        --theme-background-tertiary: red;
+        --theme-background-quaternary: yellow;
+        --theme-background-quinary: lime;
+    }
+    75% {
         --theme-text-primary: #cccccc;
         --theme-text-primary-active: #777;
         --theme-text-secondary: #a7a7a7;
@@ -73,8 +110,8 @@ body.lightmode {
         --theme-background-quinary: #969696;
     }
 }
-}
 
+/* body variables when theme is dark mode, or somehow no theme was set into LocalStorage */
 body.darkmode, body:not(.darkmode):not(.lightmode) {
     --theme-text-primary: #cccccc;
     --theme-text-primary-active: #777;
@@ -91,6 +128,7 @@ body.darkmode, body:not(.darkmode):not(.lightmode) {
     --theme-background-quinary: #969696;
 }
 
+/* set the body properties once page has finished loading */
 body:not(.awaitingPageLoad) {
     text-align: center;
     transition: var(--theme-transition-md);
