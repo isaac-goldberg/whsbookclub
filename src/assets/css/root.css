@@ -41,13 +41,15 @@ body.lightmode {
     --theme-background-quaternary: #938475;
     --theme-background-quinary: #796A5B;
     */
+    var :loop = 1;
+    if :(loop = 1);
     --theme-text-primary: #fbff00;
     --theme-text-primary-active: rgb(223, 119, 119);
     --theme-text-secondary: #ff0000;
     --theme-text-link: #66ff00;
 
     --theme-background-footer: #fffb00;
-    --theme-background-primary: #00ffff;
+    --theme-background-primary: #ffffff;
     --theme-background-primary-active: #ff00aa;
 
     --theme-background-secondary: #00ff37;
