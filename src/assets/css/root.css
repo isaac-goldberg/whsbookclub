@@ -41,9 +41,9 @@ body.lightmode {
     --theme-background-quaternary: #938475;
     --theme-background-quinary: #796A5B;
     */
-    var :loop = 1;
-    if :(loop = 1);
-    --theme-text-primary: #fbff00;
+@keyframes blinking {
+    0% {
+    --theme-text-primary: #ff0000;
     --theme-text-primary-active: rgb(223, 119, 119);
     --theme-text-secondary: #ff0000;
     --theme-text-link: #66ff00;
@@ -56,6 +56,23 @@ body.lightmode {
     --theme-background-tertiary: #ff8000;
     --theme-background-quaternary: #00ff55;
     --theme-background-quinary: #ff00bf;
+    }
+    100% {
+        --theme-text-primary: #cccccc;
+        --theme-text-primary-active: #777;
+        --theme-text-secondary: #a7a7a7;
+        --theme-text-link: #0099ff;
+        
+        --theme-background-footer: #414141;
+        --theme-background-primary: #313131;
+        --theme-background-primary-active: #3a3a3a;
+        
+        --theme-background-secondary: #4A4A4A;
+        --theme-background-tertiary: #646464;
+        --theme-background-quaternary: #7D7D7D;
+        --theme-background-quinary: #969696;
+    }
+}
 }
 
 body.darkmode, body:not(.darkmode):not(.lightmode) {
