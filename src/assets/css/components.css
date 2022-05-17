@@ -2,8 +2,8 @@
 
 .switch-container {
     display: inline;
-    width: 30px !important;
-    height: 20px !important;
+    width: 40px !important;
+    height: 21px !important;
     float: right;
 }
 .switch-container input {
@@ -20,13 +20,9 @@
 .switch-slider {
     position: relative;
     display: inline-block;
-    height: 17px;
-    width: 30px;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     background-color: var(--theme-danger);
     transition: var(--theme-transition-slow);
     border-radius: 17px;
@@ -34,8 +30,8 @@
 .switch-slider::before {
     position: absolute;
     content: "";
-    height: 13px;
-    width: 13px;
+    height: 17px;
+    width: 17px;
     left: 2px;
     bottom: 2px;
     background-color: var(--theme-danger);
@@ -47,7 +43,7 @@
     background-color: var(--theme-success) !important;
 }
 .switch-container input:checked + .switch-slider-flexbox .switch-slider:before {
-    transform: translateX(13px);
+    transform: translateX(19px);
     background-color: var(--theme-success) !important;
 }
 

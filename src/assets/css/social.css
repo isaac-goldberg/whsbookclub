@@ -9,7 +9,7 @@
 }
 
 .btn, .btn:before, .btn i {
-    transition: all 0.35s;
+    transition: all 0.35s, border 0s;
 }
 
 .btn:before {
