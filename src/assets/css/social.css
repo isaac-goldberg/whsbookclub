@@ -78,7 +78,7 @@
     width: 30px;
     height: 100%;
     background-color: rgb(255, 255, 211);
-    animation: sheen 3s ease-in-out infinite;
+    animation: sheen 2.25s ease-in-out infinite;
 }
 
 body.lightmode .social-cards-table .social-card .btn {
