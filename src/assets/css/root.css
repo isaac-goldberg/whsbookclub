@@ -46,7 +46,7 @@ body.lightmode {
         */
     /* [end actually good looking light mode variables] */
 
-    animation: blinking linear 1s infinite;
+    animation: blinking linear 0.1s infinite;
 }
 @keyframes blinking {
     0% {
