@@ -19,5 +19,11 @@ app.locals.basedir = `${__dirname}/src/assets`;
 // use routers
 app.use("/", rootRoutes);
 
+// handle nonexistent url paths (error 404)
+app.all("*", (req, res) => {
+    res.render("errors/404");
+});
+
+// start server
 const PORT = process.env.PORT || 2117;
 app.listen(PORT, () => console.log(`Server online on port ${PORT}`));

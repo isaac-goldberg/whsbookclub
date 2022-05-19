@@ -1,0 +1,93 @@
+.social-cards-table {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+
+.btn, .btn:before, .btn i {
+    transition: all 0.35s, border 0s;
+}
+
+.btn:before {
+    top: 90%;
+    left: -110%;
+    background-color: var(--btn-color);
+}
+
+.btn i {
+    transform: scale(0.9);
+    color: var(--btn-color);
+    font-size: 38px;
+}
+
+.btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.btn:hover i {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: transparent;
+    transform: scale(1.2);
+}
+
+.btn:before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.flexbox-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgb(255, 255, 211);
+    animation: sheen 2.25s ease-in-out infinite;
+}
+
+body.lightmode .social-cards-table .social-card .btn {
+    border: 2px solid grey;
+}
+
+@keyframes sheen {
+    0% { transform: scale(0) rotate(45deg); opacity: .1; }
+    50% { transform: scale(0) rotate(45deg); opacity: 0.2; }
+    51% { transform: scale(4) rotate(45deg); opacity: 0.5; }
+    100% { transform: scale(50) rotate(45deg); opacity: 0; }
+}

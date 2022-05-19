@@ -35,4 +35,10 @@ router.get("/board", (req, res) => {
     });
 });
 
+router.get("/social", (req, res) => {
+    res.render("pages/social", {
+        title: "Social Media",
+    });
+});
+
 module.exports = router;
