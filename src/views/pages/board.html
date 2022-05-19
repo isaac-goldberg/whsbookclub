@@ -8,9 +8,12 @@
 
 <div class="flex-table">
     {{#boardMembers}}
-        <div class="card">
+        <div class="parallax card" data-tilt data-tilt-scale="1.1" data-tilt-perspective="500">
             <p class="card-title">{{role}}</p>
             <p class="card-body">{{fullName}}</p>
         </div>
     {{/boardMembers}}
 </div>
+
+<!-- tilt.js library created by @gijsroge: https://github.com/gijsroge/tilt.js -->
+<script src="/js/tilt.jquery.js"></script>

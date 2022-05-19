@@ -243,6 +243,10 @@ body:not(.awaitingPageLoad) {
     margin: 0;
 }
 
+body *::selection {
+    background-color: #00aadd;
+}
+
 * {
     outline: none !important;
 }

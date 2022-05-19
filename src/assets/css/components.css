@@ -69,3 +69,16 @@
 .flex-table .card .card-title {
     font-size: 24px;
 }
+
+/* parallax cards */
+.parallax {
+    cursor: default;
+    transform-style: preserve-3d;
+}
+.parallax *:not(.js-tilt-glare) {
+    backface-visibility: hidden;
+    transition: var(--theme-transition-slow);
+}
+.parallax:hover *:not(.js-tilt-glare) {
+    transform: translateZ(15px);
+}
