@@ -46,7 +46,7 @@ body.lightmode {
         */
     /* [end actually good looking light mode variables] */
 
-    animation: blinking linear 4s infinite;
+    animation: blinking linear 1s infinite;
 }
 @keyframes blinking {
     0% {
@@ -64,7 +64,52 @@ body.lightmode {
         --theme-background-quaternary: #00ff55;
         --theme-background-quinary: #ff00bf;
     }
-    25% {
+    10% {
+        --theme-text-primary: pink;
+        --theme-text-primary-active: blue;
+        --theme-text-secondary: purple;
+        --theme-text-link: orange;
+
+        --theme-background-footer: lime;
+        --theme-background-primary: #00eeff;
+        --theme-background-primary-active: blue;
+
+        --theme-background-secondary: red;
+        --theme-background-tertiary: yellow;
+        --theme-background-quaternary: lime;
+        --theme-background-quinary: orange;
+    }
+    20% {
+        --theme-text-primary: blue;
+        --theme-text-primary-active: purple;
+        --theme-text-secondary: #00eeff;
+        --theme-text-link: #00eeff;
+
+        --theme-background-footer: pink;
+        --theme-background-primary: lime;
+        --theme-background-primary-active: #ff00aa;
+
+        --theme-background-secondary: orange;
+        --theme-background-tertiary: red;
+        --theme-background-quaternary: yellow;
+        --theme-background-quinary: lime;
+    }
+    30% {
+        --theme-text-primary: #ff0000;
+        --theme-text-primary-active: rgb(223, 119, 119);
+        --theme-text-secondary: #ff0000;
+        --theme-text-link: #66ff00;
+
+        --theme-background-footer: #fffb00;
+        --theme-background-primary: #ffffff;
+        --theme-background-primary-active: #ff00aa;
+
+        --theme-background-secondary: #00ff37;
+        --theme-background-tertiary: #ff8000;
+        --theme-background-quaternary: #00ff55;
+        --theme-background-quinary: #ff00bf;
+    }
+    40% {
         --theme-text-primary: pink;
         --theme-text-primary-active: blue;
         --theme-text-secondary: purple;
@@ -94,20 +139,80 @@ body.lightmode {
         --theme-background-quaternary: yellow;
         --theme-background-quinary: lime;
     }
-    75% {
-        --theme-text-primary: #cccccc;
-        --theme-text-primary-active: #777;
-        --theme-text-secondary: #a7a7a7;
-        --theme-text-link: #0099ff;
-        
-        --theme-background-footer: #414141;
-        --theme-background-primary: #313131;
-        --theme-background-primary-active: #3a3a3a;
-        
-        --theme-background-secondary: #4A4A4A;
-        --theme-background-tertiary: #646464;
-        --theme-background-quaternary: #7D7D7D;
-        --theme-background-quinary: #969696;
+    60% {
+        --theme-text-primary: #ff0000;
+        --theme-text-primary-active: rgb(223, 119, 119);
+        --theme-text-secondary: #ff0000;
+        --theme-text-link: #66ff00;
+
+        --theme-background-footer: #fffb00;
+        --theme-background-primary: #ffffff;
+        --theme-background-primary-active: #ff00aa;
+
+        --theme-background-secondary: #00ff37;
+        --theme-background-tertiary: #ff8000;
+        --theme-background-quaternary: #00ff55;
+        --theme-background-quinary: #ff00bf;
+    }
+    70% {
+        --theme-text-primary: pink;
+        --theme-text-primary-active: blue;
+        --theme-text-secondary: purple;
+        --theme-text-link: orange;
+
+        --theme-background-footer: lime;
+        --theme-background-primary: #00eeff;
+        --theme-background-primary-active: blue;
+
+        --theme-background-secondary: red;
+        --theme-background-tertiary: yellow;
+        --theme-background-quaternary: lime;
+        --theme-background-quinary: orange;
+    }
+    80% {
+        --theme-text-primary: blue;
+        --theme-text-primary-active: purple;
+        --theme-text-secondary: #00eeff;
+        --theme-text-link: #00eeff;
+
+        --theme-background-footer: pink;
+        --theme-background-primary: lime;
+        --theme-background-primary-active: #ff00aa;
+
+        --theme-background-secondary: orange;
+        --theme-background-tertiary: red;
+        --theme-background-quaternary: yellow;
+        --theme-background-quinary: lime;
+    }
+    90% {
+        --theme-text-primary: pink;
+        --theme-text-primary-active: blue;
+        --theme-text-secondary: purple;
+        --theme-text-link: orange;
+
+        --theme-background-footer: lime;
+        --theme-background-primary: #00eeff;
+        --theme-background-primary-active: blue;
+
+        --theme-background-secondary: red;
+        --theme-background-tertiary: yellow;
+        --theme-background-quaternary: lime;
+        --theme-background-quinary: orange;
+    }
+    100% {
+        --theme-text-primary: blue;
+        --theme-text-primary-active: purple;
+        --theme-text-secondary: #00eeff;
+        --theme-text-link: #00eeff;
+
+        --theme-background-footer: pink;
+        --theme-background-primary: lime;
+        --theme-background-primary-active: #ff00aa;
+
+        --theme-background-secondary: orange;
+        --theme-background-tertiary: red;
+        --theme-background-quaternary: yellow;
+        --theme-background-quinary: lime;
     }
 }
 
