@@ -46,7 +46,7 @@ body.lightmode {
         */
     /* [end actually good looking light mode variables] */
 
-    animation: blinking linear 0.5s infinite;
+    animation: blinking linear 0.7s infinite;
 }
 @keyframes blinking {
     0% {
@@ -95,12 +95,12 @@ body.lightmode {
         --theme-background-quinary: lime;
     }
     30% {
-        --theme-text-primary: #ff0000;
-        --theme-text-primary-active: rgb(223, 119, 119);
-        --theme-text-secondary: #ff0000;
-        --theme-text-link: #66ff00;
+        --theme-text-primary: #5fff3e;
+        --theme-text-primary-active: rgb(255, 0, 0);
+        --theme-text-secondary: #00ffff;
+        --theme-text-link: #fffb00;
 
-        --theme-background-footer: #fffb00;
+        --theme-background-footer: #ffffff;
         --theme-background-primary: #ffffff;
         --theme-background-primary-active: #ff00aa;
 
@@ -116,22 +116,22 @@ body.lightmode {
         --theme-text-link: orange;
 
         --theme-background-footer: lime;
-        --theme-background-primary: #00eeff;
+        --theme-background-primary: #ffffff;
         --theme-background-primary-active: blue;
 
-        --theme-background-secondary: red;
+        --theme-background-secondary: rgb(255, 255, 255);
         --theme-background-tertiary: yellow;
         --theme-background-quaternary: lime;
         --theme-background-quinary: orange;
     }
     50% {
-        --theme-text-primary: blue;
+        --theme-text-primary: rgb(255, 251, 0);
         --theme-text-primary-active: purple;
         --theme-text-secondary: #00eeff;
         --theme-text-link: #00eeff;
 
-        --theme-background-footer: pink;
-        --theme-background-primary: lime;
+        --theme-background-footer: rgb(115, 255, 0);
+        --theme-background-primary: rgb(255, 255, 255);
         --theme-background-primary-active: #ff00aa;
 
         --theme-background-secondary: orange;
