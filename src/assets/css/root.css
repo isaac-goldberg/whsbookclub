@@ -267,6 +267,12 @@ a {
     color: var(--theme-text-link);
 }
 
+code {
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 7px;
+}
+
 .footer {
     background-color: var(--theme-background-footer);
     font-size: 12px;
