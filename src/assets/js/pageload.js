@@ -10,7 +10,7 @@ function ready (callback) {
 }
 
 ready(function(){
-    document.body.classList.remove("awaitingPageLoad");
+    document.body.classList.add("loaded");
 
     let theme = window.localStorage.getItem("theme");
     if (theme === "dark") {

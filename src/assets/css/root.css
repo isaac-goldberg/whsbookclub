@@ -234,7 +234,10 @@ body.darkmode, body:not(.darkmode):not(.lightmode) {
 }
 
 /* set the body properties once page has finished loading */
-body:not(.awaitingPageLoad) {
+body:not(.loaded) {
+    transition: 0;
+}
+body {
     text-align: center;
     transition: var(--theme-transition-md);
     font-family: var(--theme-font-family-primary) !important;

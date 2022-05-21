@@ -59,8 +59,6 @@
 }
 
 .parallax .top-section {
-    /* background: linear-gradient(45deg, hsl(0deg 58% 51%), hsl(249deg 100% 54%)); */
-    /* background: linear-gradient(45deg, hsl(224deg 58% 51%), hsl(166deg 100% 54%)); */
     background: linear-gradient(45deg, #3cb500, #00b585);
     position: absolute;
     top: 0;
@@ -112,7 +110,6 @@
     position: absolute;
     top: 35%;
     left: 0;
-    /* background: #0b0b2a; */
     background-color: #0b2a21;
     width: 100%;
     height: 65%;
