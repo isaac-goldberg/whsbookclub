@@ -53,7 +53,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    max-width: 999px;
+    max-width: 1998px;
     margin: auto;
     margin-top: 50px;
     row-gap: 20px;
@@ -71,14 +71,8 @@
 }
 
 /* parallax cards */
-.parallax {
+.parallax-card {
     cursor: default;
     transform-style: preserve-3d;
-}
-.parallax *:not(.js-tilt-glare) {
-    backface-visibility: hidden;
-    transition: var(--theme-transition-slow);
-}
-.parallax:hover *:not(.js-tilt-glare) {
-    transform: translateZ(15px);
+    box-shadow: 0 0 15px 1px black;
 }

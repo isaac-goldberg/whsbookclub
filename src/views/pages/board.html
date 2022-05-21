@@ -7,13 +7,35 @@
 <p class="subheading">2022 - 2023 School Year</p>
 
 <div class="flex-table">
-    {{#boardMembers}}
-        <div class="parallax card" data-tilt data-tilt-scale="1.1" data-tilt-perspective="500">
+    <!-- <div class="parallax card" data-tilt data-tilt-perspective="400" data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare=".1">
             <p class="card-title">{{role}}</p>
             <p class="card-body">{{fullName}}</p>
+        </div> -->
+    {{#boardMembers}}
+
+        <div class="user parallax parallax-card">
+            <span class="inner-card">
+                <span class="user-details">
+                    <span class="top-section"></span>
+                    <span class="bottom-section">
+                        <span class="name">{{fullName}}</span>
+                        <span class="area"><span class="area-container">{{role}}</span></span>
+                        <span class="buttons">
+                            <a href="#" target="_blank"><i class="fa-solid fa-hashtag"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-code-merge"></i></a>
+                            <a href="#" target="_blank" class="message"><i class="fa-regular fa-envelope"></i> Message</a>
+                        </span>
+                    </span>
+                    <span class="user-icon"><img src="https://static.thenounproject.com/png/3244607-200.png"></span>
+                </span>
+                <span class="glare"></span>
+            </span>
+            </span>
         </div>
     {{/boardMembers}}
 </div>
 
 <!-- tilt.js library created by @gijsroge: https://github.com/gijsroge/tilt.js -->
-<script src="/js/tilt.jquery.js"></script>
+<!-- <script src="/js/tilt.jquery.js"></script> -->
+
+{{> ./partials/parallax}}

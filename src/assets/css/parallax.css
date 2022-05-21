@@ -1,0 +1,171 @@
+.parallax {
+    box-shadow: none;
+    backface-visibility: visible;
+    background: transparent;
+    transform-style: preserve-3d;
+    padding: 0;
+    height: auto;
+    margin: 0 2rem 4rem 0;
+    width: 18rem;
+    height: 25rem;
+    transition: all 0.2s ease-out;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.parallax .inner-card {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 2rem;
+    line-height: 3rem;
+    will-change: transform, filter;
+    background: transparent;
+    background-size: calc(100% + 6px) auto;
+    background-position: -3px -3px;
+    margin: 0;
+    transition: all 0.15s ease-out;
+    height: auto;
+    border-radius: 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+    margin: 0px auto;
+    transform: rotateX(0deg) rotateY(0deg) scale(1);
+    top: 0;
+    height: 100%;
+    box-shadow: 0 0 10px .1px #0d4233;
+    font-weight: 500;
+    perspective-origin: 0 0;
+    letter-spacing: 0;
+}
+.parallax:hover .inner-card {
+    box-shadow: 0 0 15px 1px #0d4233;
+}
+
+.parallax .glare {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.1s ease-out;
+    opacity: 0.6;
+    pointer-events: none;
+    height: 100%;
+    border-radius: 14px;
+    z-index: 9999;
+    mix-blend-mode: hard-light;
+    background: radial-gradient(circle at 50% 50%, rgb(199 198 243), transparent);
+}
+
+.parallax .top-section {
+    /* background: linear-gradient(45deg, hsl(0deg 58% 51%), hsl(249deg 100% 54%)); */
+    /* background: linear-gradient(45deg, hsl(224deg 58% 51%), hsl(166deg 100% 54%)); */
+    background: linear-gradient(45deg, #3cb500, #00b585);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 14px 14px 0 0;
+    width: 100%;
+    height: 35%;
+    z-index: 99;
+}
+
+.parallax .user-icon {
+    position: absolute;
+    left: calc(50% - 64px);
+    top: calc(35% - 72px);
+    z-index: 99;
+}
+
+.parallax .user-icon img {
+    width: 128px;
+    height: 128px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    transform: scale(1);
+    transition: var(--theme-transition-slow);
+}
+
+.parallax .user-icon img:hover {
+    transform: scale(1.15);
+}
+
+.parallax .glare {
+    opacity: 0;
+}
+
+.parallax.animated .glare {
+    opacity: 0.3;
+}
+
+.parallax.animated.user .glare {
+    opacity: 0.15;
+}
+
+.parallax .name {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.parallax .bottom-section {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    /* background: #0b0b2a; */
+    background-color: #0b2a21;
+    width: 100%;
+    height: 65%;
+    box-sizing: border-box;
+    padding-top: 64px;
+    text-align: center;
+}
+
+.bottom-section .area {
+    font-size: 1rem;
+    opacity: 0.4;
+    display: block;
+    line-height: 1rem;
+}
+
+.buttons {
+    float: left;
+    width: calc(100% - 2rem);
+    position: absolute;
+    bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 1rem;
+}
+
+.buttons > a {
+    border: none;
+    width: auto;
+    background: #004a20;
+    padding: 0;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 1rem;
+    transition: all 0.1s ease-out;
+    transform: scale(1);
+    padding: 0.75rem 1rem;
+    margin: 0 1rem 0 0;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.buttons > a:hover {
+    background: #4D976D;
+}
+
+.buttons .message i {
+    margin: 0 0.5rem 0 0;
+}
+
+.buttons .message {
+    margin: 0;
+}
