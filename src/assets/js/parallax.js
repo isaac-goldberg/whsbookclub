@@ -16,8 +16,8 @@ let calculateAngle = function (e, item, parent) {
 
     // Use this to create an angle. I have divided by 6 and 4 respectively so the effect looks good.
     // Changing these numbers will change the depth of the effect.
-    let calcAngleX = (x - halfWidth) / 6;
-    let calcAngleY = (y - halfHeight) / 14;
+    let calcAngleX = (x - halfWidth) / 6 // DEFAULT: 6;
+    let calcAngleY = (y - halfHeight) / 14 // DEFAULT: 14;
 
     let gX = (1 - (x / (halfWidth * 2))) * 100;
     let gY = (1 - (y / (halfHeight * 2))) * 100;

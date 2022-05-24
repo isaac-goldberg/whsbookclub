@@ -8,33 +8,33 @@
     margin-top: 50px;
 }
 
-.btn, .btn:before, .btn i {
+.social-btn, .social-btn:before, .social-btn i {
     transition: all 0.35s, border 0s;
 }
 
-.btn:before {
+.social-btn:before {
     top: 90%;
     left: -110%;
     background-color: var(--btn-color);
 }
 
-.btn i {
+.social-btn i {
     transform: scale(0.9);
     color: var(--btn-color);
     font-size: 38px;
 }
 
-.btn:hover:before {
+.social-btn:hover:before {
     top: -10%;
     left: -10%;
 }
 
-.btn:hover i {
+.social-btn:hover i {
     color: #fff;
     transform: scale(1.05);
 }
 
-.btn {
+.social-btn {
     display: inline-block;
     background-color: #fff;
     width: 90px;
@@ -48,14 +48,14 @@
     box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
 }
 
-.btn:hover {
+.social-btn:hover {
     background-color: transparent;
     box-shadow: 0 0 5px 1px var(--btn-color);
     filter: brightness(1.1);
     transform: scale(1.2);
 }
 
-.btn:before {
+.social-btn:before {
     content: '';
     width: 120%;
     height: 120%;
@@ -71,7 +71,7 @@
     align-items: center;
 }
 
-.btn:hover::after {
+.social-btn:hover::after {
     position: absolute;
     content: '';
     display: inline-block;
@@ -83,7 +83,7 @@
     animation: sheen 2.25s ease-in-out infinite;
 }
 
-body.lightmode .social-cards-table .social-card .btn {
+body.lightmode .social-cards-table .social-card .social-btn {
     border: 2px solid grey;
 }
 

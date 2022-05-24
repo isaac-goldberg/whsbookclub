@@ -39,7 +39,7 @@
     letter-spacing: 0;
 }
 .parallax:hover .inner-card {
-    box-shadow: 0 0 15px 1px #0d4233;
+    box-shadow: 0 0 20px 1px #0b4f3c;
 }
 
 .parallax .glare {
@@ -157,6 +157,7 @@
 
 .buttons > a:hover {
     background: #4D976D;
+    box-shadow: 0 0 10px 1px #41a36c;
 }
 
 .buttons .message i {
