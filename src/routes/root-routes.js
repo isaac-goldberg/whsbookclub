@@ -7,37 +7,45 @@ router.get("/", (req, res) => {
     })
 });
 
+router.get("/social", (req, res) => {
+    res.render("pages/social", {
+        title: "Social Media",
+    });
+});
+
 router.get("/board", (req, res) => {
     res.render("pages/board", {
         title: "Board Members",
         boardMembers: [
             {
                 fullName: "Undetermined",
-                role: "President"
+                roles: ["President", "Chief Executive Officer"]
             },
             {
                 fullName: "Undetermined",
-                role: "Vice President"
+                roles: ["Vice President"]
             },
             {
                 fullName: "Undetermined",
-                role: "ICC Representative"
+                roles: ["ICC Representative"]
             },
             {
                 fullName: "Undetermined",
-                role: "Secretary"
+                roles: ["Secretary"]
             },
             {
                 fullName: "Undetermined",
-                role: "Publicist"
+                roles: ["Publicist"]
             },
+            {
+                fullName: "Isaac Goldberg",
+                roles: ["Full-Stack Site Developer"]
+            },
+            {
+                fullName: "Matthias Kim",
+                roles: ["Frontend Site Designer"]
+            }
         ]
-    });
-});
-
-router.get("/social", (req, res) => {
-    res.render("pages/social", {
-        title: "Social Media",
     });
 });
 

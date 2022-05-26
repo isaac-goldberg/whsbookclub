@@ -10,7 +10,7 @@
     --theme-danger-l: 59%;
 
     --theme-button-primary: #ffd700;
-    --theme-button-secondary: #CCA400;
+    --theme-button-secondary: #ad8b00;
     --theme-button-text-primary: #171717;
     --theme-button-text-secondary: #474747;
 
@@ -29,7 +29,7 @@
 /* body variables when theme is light mode */
 body.lightmode {
     /* [actually good looking light mode variables] */
-        /* 
+    /* 
         --theme-text-primary: #171717;
         --theme-text-primary-active: #000;
         --theme-text-secondary: #474747;
@@ -48,6 +48,7 @@ body.lightmode {
 
     animation: blinking linear 0.9s infinite;
 }
+
 @keyframes blinking {
     0% {
         --theme-text-primary: #ff0000;
@@ -64,6 +65,7 @@ body.lightmode {
         --theme-background-quaternary: #00ff55;
         --theme-background-quinary: #ff00bf;
     }
+
     10% {
         --theme-text-primary: pink;
         --theme-text-primary-active: blue;
@@ -79,6 +81,7 @@ body.lightmode {
         --theme-background-quaternary: lime;
         --theme-background-quinary: orange;
     }
+
     20% {
         --theme-text-primary: blue;
         --theme-text-primary-active: purple;
@@ -94,6 +97,7 @@ body.lightmode {
         --theme-background-quaternary: yellow;
         --theme-background-quinary: lime;
     }
+
     30% {
         --theme-text-primary: #5fff3e;
         --theme-text-primary-active: rgb(255, 0, 0);
@@ -109,6 +113,7 @@ body.lightmode {
         --theme-background-quaternary: #00ff55;
         --theme-background-quinary: #ff00bf;
     }
+
     40% {
         --theme-text-primary: pink;
         --theme-text-primary-active: blue;
@@ -124,6 +129,7 @@ body.lightmode {
         --theme-background-quaternary: lime;
         --theme-background-quinary: orange;
     }
+
     50% {
         --theme-text-primary: rgb(255, 251, 0);
         --theme-text-primary-active: purple;
@@ -139,6 +145,7 @@ body.lightmode {
         --theme-background-quaternary: yellow;
         --theme-background-quinary: lime;
     }
+
     60% {
         --theme-text-primary: #ff0000;
         --theme-text-primary-active: rgb(223, 119, 119);
@@ -154,6 +161,7 @@ body.lightmode {
         --theme-background-quaternary: #00ff55;
         --theme-background-quinary: #ff00bf;
     }
+
     70% {
         --theme-text-primary: pink;
         --theme-text-primary-active: blue;
@@ -169,6 +177,7 @@ body.lightmode {
         --theme-background-quaternary: lime;
         --theme-background-quinary: orange;
     }
+
     80% {
         --theme-text-primary: blue;
         --theme-text-primary-active: purple;
@@ -184,6 +193,7 @@ body.lightmode {
         --theme-background-quaternary: yellow;
         --theme-background-quinary: lime;
     }
+
     90% {
         --theme-text-primary: pink;
         --theme-text-primary-active: blue;
@@ -199,6 +209,7 @@ body.lightmode {
         --theme-background-quaternary: lime;
         --theme-background-quinary: orange;
     }
+
     100% {
         --theme-text-primary: blue;
         --theme-text-primary-active: purple;
@@ -217,16 +228,17 @@ body.lightmode {
 }
 
 /* body variables when theme is dark mode, or somehow no theme was set into LocalStorage */
-body.darkmode, body:not(.darkmode):not(.lightmode) {
+body.darkmode,
+body:not(.darkmode):not(.lightmode) {
     --theme-text-primary: #cccccc;
     --theme-text-primary-active: #777;
     --theme-text-secondary: #a7a7a7;
     --theme-text-link: #0099ff;
-    
+
     --theme-background-footer: #414141;
     --theme-background-primary: #313131;
     --theme-background-primary-active: #3a3a3a;
-    
+
     --theme-background-secondary: #4A4A4A;
     --theme-background-tertiary: #646464;
     --theme-background-quaternary: #7D7D7D;
@@ -237,6 +249,7 @@ body.darkmode, body:not(.darkmode):not(.lightmode) {
 body:not(.loaded) {
     transition: 0;
 }
+
 body {
     text-align: center;
     transition: var(--theme-transition-md);
@@ -246,6 +259,29 @@ body {
     margin: 0;
 }
 
+/* scrollbar styles */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: var(--theme-background-secondary);
+    border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: var(--theme-background-tertiary);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-background-quaternary);
+}
+
+/* global selectors */
 body *::selection {
     background-color: #00aadd;
 }

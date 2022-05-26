@@ -7,19 +7,20 @@
 <p class="subheading">2022 - 2023 School Year</p>
 
 <div class="flex-table">
-    <!-- <div class="parallax card" data-tilt data-tilt-perspective="400" data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare=".1">
-            <p class="card-title">{{role}}</p>
-            <p class="card-body">{{fullName}}</p>
-        </div> -->
     {{#boardMembers}}
-
         <div class="user parallax parallax-card">
             <span class="inner-card">
                 <span class="user-details">
                     <span class="top-section"></span>
                     <span class="bottom-section">
                         <span class="name">{{fullName}}</span>
-                        <span class="area"><span class="area-container">{{role}}</span></span>
+                        <span class="area">
+                            <span class="area-container">
+                                {{#roles}}
+                                    <span class="badge">{{.}}</span>
+                                {{/roles}}
+                            </span>
+                        </span>
                         <span class="buttons">
                             <a href="#" target="_blank"><i class="fa-solid fa-hashtag"></i></a>
                             <a href="#" target="_blank"><i class="fa-solid fa-code-merge"></i></a>
@@ -34,8 +35,5 @@
         </div>
     {{/boardMembers}}
 </div>
-
-<!-- tilt.js library created by @gijsroge: https://github.com/gijsroge/tilt.js -->
-<!-- <script src="/js/tilt.jquery.js"></script> -->
 
 {{> ./partials/parallax}}
