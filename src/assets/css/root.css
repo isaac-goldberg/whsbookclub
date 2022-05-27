@@ -313,10 +313,34 @@ code {
 }
 
 .footer {
-    background-color: var(--theme-background-footer);
     font-size: 12px;
-    padding: 20px 0;
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+.footer-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-top: 1px solid var(--theme-background-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+.footer .brand {
+    user-select: none;
+    cursor: default;
+    margin-right: 40px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.footer .brand i {
+    font-size: 24px;
+}
+.footer a:hover {
+    text-decoration: underline;
 }
