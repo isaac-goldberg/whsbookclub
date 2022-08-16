@@ -38,11 +38,11 @@ router.get("/board", (req, res) => {
                 roles: ["Publicist"]
             },
             {
-                fullName: "Isaac G",
+                fullName: "Isaac Goldberg",
                 roles: ["Full-Stack Site Developer"]
             },
             {
-                fullName: "Undetermined",
+                fullName: "Matthias Kim",
                 roles: ["Frontend Site Designer"]
             }
         ]
